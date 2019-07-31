@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C47A64522D2637800617085 /* APIDefinitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47A64222D2637800617085 /* APIDefinitionProtocol.swift */; };
+		4C47A64622D2637800617085 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47A64422D2637800617085 /* APIError.swift */; };
+		4C47A64722D2637800617085 /* APIRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47A64122D2637800617085 /* APIRequester.swift */; };
+		4C47A64822D2637800617085 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C47A64322D2637800617085 /* APIResult.swift */; };
+		4C47A69322D2684700617085 /* swapi.h in Sources */ = {isa = PBXBuildFile; fileRef = 4C47A69222D2684700617085 /* swapi.h */; };
 		4CDF032020812ADD005976BC /* swapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDF031620812ADD005976BC /* swapi.framework */; };
 		4CDF032520812ADD005976BC /* swapiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF032420812ADD005976BC /* swapiTests.swift */; };
-		4CDF032720812ADD005976BC /* swapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CDF031920812ADD005976BC /* swapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,8 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C47A64122D2637800617085 /* APIRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequester.swift; sourceTree = "<group>"; };
+		4C47A64222D2637800617085 /* APIDefinitionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDefinitionProtocol.swift; sourceTree = "<group>"; };
+		4C47A64322D2637800617085 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		4C47A64422D2637800617085 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		4C47A69222D2684700617085 /* swapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swapi.h; sourceTree = "<group>"; };
 		4CDF031620812ADD005976BC /* swapi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swapi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CDF031920812ADD005976BC /* swapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swapi.h; sourceTree = "<group>"; };
 		4CDF031A20812ADD005976BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CDF031F20812ADD005976BC /* swapiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swapiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDF032420812ADD005976BC /* swapiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swapiTests.swift; sourceTree = "<group>"; };
@@ -71,8 +79,12 @@
 		4CDF031820812ADD005976BC /* swapi */ = {
 			isa = PBXGroup;
 			children = (
-				4CDF031920812ADD005976BC /* swapi.h */,
+				4C47A64222D2637800617085 /* APIDefinitionProtocol.swift */,
+				4C47A64422D2637800617085 /* APIError.swift */,
+				4C47A64122D2637800617085 /* APIRequester.swift */,
+				4C47A64322D2637800617085 /* APIResult.swift */,
 				4CDF031A20812ADD005976BC /* Info.plist */,
+				4C47A69222D2684700617085 /* swapi.h */,
 			);
 			path = swapi;
 			sourceTree = "<group>";
@@ -93,7 +105,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CDF032720812ADD005976BC /* swapi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C47A64522D2637800617085 /* APIDefinitionProtocol.swift in Sources */,
+				4C47A64722D2637800617085 /* APIRequester.swift in Sources */,
+				4C47A69322D2684700617085 /* swapi.h in Sources */,
+				4C47A64622D2637800617085 /* APIError.swift in Sources */,
+				4C47A64822D2637800617085 /* APIResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +405,7 @@
 		4CDF032E20812ADD005976BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF7G8HWRL8;
 				INFOPLIST_FILE = swapiTests/Info.plist;
@@ -407,6 +424,7 @@
 		4CDF032F20812ADD005976BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF7G8HWRL8;
 				INFOPLIST_FILE = swapiTests/Info.plist;
