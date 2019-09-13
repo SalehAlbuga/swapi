@@ -11,8 +11,8 @@
 import Foundation
 
 public struct APIError {
-    var innerError: APIErrorType
-    var response: URLResponse?
+    public var innerError: APIErrorType
+    public var response: URLResponse?
 }
 
 public enum APIErrorType {

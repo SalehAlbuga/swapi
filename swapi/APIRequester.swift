@@ -13,7 +13,7 @@ import Foundation
 public struct APIRequester {
     
     // request a U endpoint defined as APIDefinition & deserialize the response as a T Decodable model & return the result
-    static func request<U, T>(endpoint: U, deserialize: T.Type, completionHandler: @escaping (APIResult<T>) -> ()) where U : APIDefinitionProtocol, T : Decodable {
+    public static func request<U, T>(endpoint: U, deserialize: T.Type, completionHandler: @escaping (APIResult<T>) -> ()) where U : APIDefinitionProtocol, T : Decodable {
         sendRequest(endpoint: endpoint) { (data, res, error) in
             if error == nil {
                     deserializeData(deserialize, data: data, FromEndpoint: endpoint, completionHandler: { (dataError, deserializedData) in
@@ -30,7 +30,7 @@ public struct APIRequester {
     }
     
     // request a U endpoint defined as APIDefinition & return the raw result
-    static func requestRaw<U>(endpoint: U, completionHandler: @escaping (_ data: Data?, _ response: URLResponse?, _ error: APIError?) ->()) where U : APIDefinitionProtocol {
+    public static func requestRaw<U>(endpoint: U, completionHandler: @escaping (_ data: Data?, _ response: URLResponse?, _ error: APIError?) ->()) where U : APIDefinitionProtocol {
         sendRequest(endpoint: endpoint) { (data, res, error) in
             return completionHandler(data, res, error)
         }
@@ -52,7 +52,7 @@ public struct APIRequester {
     }
 
     // Get the url as string out of an APIDefinition endpoint
-    private static func stringUrl<T>(ForEndpoint endpoint: T) -> String? where T: APIDefinitionProtocol {
+    public static func stringUrl<T>(ForEndpoint endpoint: T) -> String? where T: APIDefinitionProtocol {
         return self.url(ForEndpoint: endpoint)?.absoluteString
     }
     
@@ -91,7 +91,7 @@ public struct APIRequester {
     
     // Build an URLRequest out of an APIDefinition endpoint
     
-    static func buildRequest<T>(endpoint: T) -> URLRequest? where T: APIDefinitionProtocol {
+    public static func buildRequest<T>(endpoint: T) -> URLRequest? where T: APIDefinitionProtocol {
         guard let url = self.url(ForEndpoint: endpoint) else {
             return nil
         }
