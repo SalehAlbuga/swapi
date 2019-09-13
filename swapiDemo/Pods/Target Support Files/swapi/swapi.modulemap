@@ -1,0 +1,6 @@
+framework module swapi {
+  umbrella header "swapi-umbrella.h"
+
+  export *
+  module * { export * }
+}

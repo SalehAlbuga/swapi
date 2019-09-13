@@ -1,0 +1,16 @@
+PODS:
+  - swapi (0.9)
+
+DEPENDENCIES:
+  - swapi (from `../swapi`)
+
+EXTERNAL SOURCES:
+  swapi:
+    :path: "../swapi"
+
+SPEC CHECKSUMS:
+  swapi: 7088e7f3041402e2cae12498f47a80e67e268ef6
+
+PODFILE CHECKSUM: d28920b25de4b0e8ac5154eee2c00e892dadc4d5
+
+COCOAPODS: 1.5.3

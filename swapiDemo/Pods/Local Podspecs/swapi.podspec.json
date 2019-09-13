@@ -1,0 +1,18 @@
+{
+  "name": "swapi",
+  "version": "0.9",
+  "summary": "A network abstraction layer that uses only Swift",
+  "homepage": "https://github.com/Swapi",
+  "license": "MIT",
+  "authors": {
+    "Saleh Albuga": "salehlbuga@outlook.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "swapi",
+  "swift_version": "4.0"
+}

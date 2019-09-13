@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AEC81AD1D1F3141FC903D592EB76607 /* swapi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D952FF116A2EFC7EC820E764BE660999 /* swapi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		314318BC896F88A67724F076FF1E46A0 /* Pods-swapiDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D8BDE3824528BC5D853B4FD28359BA /* Pods-swapiDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48B1265F5B991EFE99A1BC028DD95CB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		71162B8732D053D47597E78217CEFD1C /* swapi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BDB36BA7A2F5374539062661E8E1AC /* swapi-dummy.m */; };
+		8277FD67AEC11E0B90E9D1DC8EEBD3F7 /* APIRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F1264E4EE9B7F5126830FE48AA933 /* APIRequester.swift */; };
+		AAEC5D6E0963855FCB3E8FD2DA1A2979 /* swapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 858111B998A705968E36169FFF92E064 /* swapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5731B06CB7741BE42AA9ACCA45CBE91 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B327B7363EE291AE164273270FADEAE /* APIError.swift */; };
+		E1A56E7C9B217E7DC6A8B884067E1913 /* APIDefinitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B705D9806FD3722CDCA2DC0F2C20D /* APIDefinitionProtocol.swift */; };
+		EA989644AD034DA7EE40A899DC76DAA5 /* Pods-swapiDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3B6C156D0D7309125D119AECD65651 /* Pods-swapiDemo-dummy.m */; };
+		F00D5CDBBA3B12EA3301EBA88C7AA51E /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910561DF8D4B207BAE6F70E887D39D0 /* APIResult.swift */; };
+		F629370B30E1BBFEF05C9FBE2D223AA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75FE9DB3896AFBF5F4080F47FC0B81CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C8494E9F1ECF7DEB7DD5AD56A065BE;
+			remoteInfo = swapi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BB8289C5FB241F0905E4DAF6C0EB379 /* Pods-swapiDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swapiDemo.modulemap"; sourceTree = "<group>"; };
+		0F7B705D9806FD3722CDCA2DC0F2C20D /* APIDefinitionProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIDefinitionProtocol.swift; path = swapi/APIDefinitionProtocol.swift; sourceTree = "<group>"; };
+		19A3C42B9866F509495D006BE22DE56A /* Pods-swapiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swapiDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		26D8BDE3824528BC5D853B4FD28359BA /* Pods-swapiDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swapiDemo-umbrella.h"; sourceTree = "<group>"; };
+		2B327B7363EE291AE164273270FADEAE /* APIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = swapi/APIError.swift; sourceTree = "<group>"; };
+		33850A71F80F0BD621B8D9AC596FDF8E /* swapi-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swapi-prefix.pch"; sourceTree = "<group>"; };
+		388E0511FF34779F0C050F4BC56C76B4 /* Pods_swapiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_swapiDemo.framework; path = "Pods-swapiDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		389FC012E47751F01FD7CBE1E0E1E967 /* swapi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = swapi.modulemap; sourceTree = "<group>"; };
+		3E37E5E36C304F94334E61C6DFD828B6 /* Pods-swapiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swapiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4FB312CA1DE1331F5DEB361C50AD2807 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59391158DFB095A7E188D04D256755F4 /* Pods-swapiDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swapiDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5D84B2C4A6BDAE8CFB9D196D44751EA5 /* Swapi.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Swapi.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6910561DF8D4B207BAE6F70E887D39D0 /* APIResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResult.swift; path = swapi/APIResult.swift; sourceTree = "<group>"; };
+		6E86777AF8050221AC6FF5523239739C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E595773439EF020D4A4AB7370CD7F64 /* Pods-swapiDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swapiDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		83BDB36BA7A2F5374539062661E8E1AC /* swapi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "swapi-dummy.m"; sourceTree = "<group>"; };
+		858111B998A705968E36169FFF92E064 /* swapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = swapi.h; path = swapi/swapi.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF3B6C156D0D7309125D119AECD65651 /* Pods-swapiDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swapiDemo-dummy.m"; sourceTree = "<group>"; };
+		B89F1264E4EE9B7F5126830FE48AA933 /* APIRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequester.swift; path = swapi/APIRequester.swift; sourceTree = "<group>"; };
+		C56539E7421F683F48CC95F7A0E6F9B5 /* Pods-swapiDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swapiDemo-frameworks.sh"; sourceTree = "<group>"; };
+		D030C19351F9A18852E96556A5444C81 /* swapi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = swapi.framework; path = swapi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D952FF116A2EFC7EC820E764BE660999 /* swapi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swapi-umbrella.h"; sourceTree = "<group>"; };
+		E8DB48ACB230CE703F84ED47795AE425 /* Pods-swapiDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swapiDemo-resources.sh"; sourceTree = "<group>"; };
+		F66FF7FB74EDB445B0FCC395AB093D20 /* swapi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = swapi.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80604D675A3AE2F87B7C1D76C4FDF948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F629370B30E1BBFEF05C9FBE2D223AA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832422C7D792E46862867C615F05F1C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48B1265F5B991EFE99A1BC028DD95CB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F8484DD55226AEAE53AD1EFD1D033C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E86777AF8050221AC6FF5523239739C /* Info.plist */,
+				389FC012E47751F01FD7CBE1E0E1E967 /* swapi.modulemap */,
+				F66FF7FB74EDB445B0FCC395AB093D20 /* swapi.xcconfig */,
+				83BDB36BA7A2F5374539062661E8E1AC /* swapi-dummy.m */,
+				33850A71F80F0BD621B8D9AC596FDF8E /* swapi-prefix.pch */,
+				D952FF116A2EFC7EC820E764BE660999 /* swapi-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../swapiDemo/Pods/Target Support Files/swapi";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6FCF4DDCF8FE84F6FF1525FA23B6AA4A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5D84B2C4A6BDAE8CFB9D196D44751EA5 /* Swapi.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FBE6CD03E42FE276598964CE4DCBE3AE /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				985AAE8AB9AAE0E88ECB62C84796CB46 /* Products */,
+				AC03C6467756ABFD692055560E23C47B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		985AAE8AB9AAE0E88ECB62C84796CB46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				388E0511FF34779F0C050F4BC56C76B4 /* Pods_swapiDemo.framework */,
+				D030C19351F9A18852E96556A5444C81 /* swapi.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC03C6467756ABFD692055560E23C47B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6A51D16E8FFDE3C15618B54CCACBC /* Pods-swapiDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA6A51D16E8FFDE3C15618B54CCACBC /* Pods-swapiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4FB312CA1DE1331F5DEB361C50AD2807 /* Info.plist */,
+				0BB8289C5FB241F0905E4DAF6C0EB379 /* Pods-swapiDemo.modulemap */,
+				59391158DFB095A7E188D04D256755F4 /* Pods-swapiDemo-acknowledgements.markdown */,
+				7E595773439EF020D4A4AB7370CD7F64 /* Pods-swapiDemo-acknowledgements.plist */,
+				AF3B6C156D0D7309125D119AECD65651 /* Pods-swapiDemo-dummy.m */,
+				C56539E7421F683F48CC95F7A0E6F9B5 /* Pods-swapiDemo-frameworks.sh */,
+				E8DB48ACB230CE703F84ED47795AE425 /* Pods-swapiDemo-resources.sh */,
+				26D8BDE3824528BC5D853B4FD28359BA /* Pods-swapiDemo-umbrella.h */,
+				19A3C42B9866F509495D006BE22DE56A /* Pods-swapiDemo.debug.xcconfig */,
+				3E37E5E36C304F94334E61C6DFD828B6 /* Pods-swapiDemo.release.xcconfig */,
+			);
+			name = "Pods-swapiDemo";
+			path = "Target Support Files/Pods-swapiDemo";
+			sourceTree = "<group>";
+		};
+		C615D4E66913D2F90D553B19365B951F /* swapi */ = {
+			isa = PBXGroup;
+			children = (
+				0F7B705D9806FD3722CDCA2DC0F2C20D /* APIDefinitionProtocol.swift */,
+				2B327B7363EE291AE164273270FADEAE /* APIError.swift */,
+				B89F1264E4EE9B7F5126830FE48AA933 /* APIRequester.swift */,
+				6910561DF8D4B207BAE6F70E887D39D0 /* APIResult.swift */,
+				858111B998A705968E36169FFF92E064 /* swapi.h */,
+				6FCF4DDCF8FE84F6FF1525FA23B6AA4A /* Pod */,
+				32F8484DD55226AEAE53AD1EFD1D033C /* Support Files */,
+			);
+			name = swapi;
+			path = ../../swapi;
+			sourceTree = "<group>";
+		};
+		FBE6CD03E42FE276598964CE4DCBE3AE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C615D4E66913D2F90D553B19365B951F /* swapi */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A5ABDC8AFCF7D39D027C7BBF7721945D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314318BC896F88A67724F076FF1E46A0 /* Pods-swapiDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8331A04253B301068B2068B62D41F9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AEC81AD1D1F3141FC903D592EB76607 /* swapi-umbrella.h in Headers */,
+				AAEC5D6E0963855FCB3E8FD2DA1A2979 /* swapi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12C8494E9F1ECF7DEB7DD5AD56A065BE /* swapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25E481E124242382B7CD5D3A15C23F6D /* Build configuration list for PBXNativeTarget "swapi" */;
+			buildPhases = (
+				F8331A04253B301068B2068B62D41F9C /* Headers */,
+				74B9D824DB6F6778283CBF9A23DA568E /* Sources */,
+				832422C7D792E46862867C615F05F1C2 /* Frameworks */,
+				23CED6046C9EF5ED1CE5075A5C32377D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swapi;
+			productName = swapi;
+			productReference = D030C19351F9A18852E96556A5444C81 /* swapi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		94EBAFDC047FA69DDCF6BE5E12BD45D6 /* Pods-swapiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59846612BC5C9E7F0D9E3CA44EDAF537 /* Build configuration list for PBXNativeTarget "Pods-swapiDemo" */;
+			buildPhases = (
+				A5ABDC8AFCF7D39D027C7BBF7721945D /* Headers */,
+				72AF60479A725CF8B53A8A4981D785D1 /* Sources */,
+				80604D675A3AE2F87B7C1D76C4FDF948 /* Frameworks */,
+				C333417A3E18B4803FE1A9511A636E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B295BE8907B69DD12FEEB725ED95332 /* PBXTargetDependency */,
+			);
+			name = "Pods-swapiDemo";
+			productName = "Pods-swapiDemo";
+			productReference = 388E0511FF34779F0C050F4BC56C76B4 /* Pods_swapiDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 985AAE8AB9AAE0E88ECB62C84796CB46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94EBAFDC047FA69DDCF6BE5E12BD45D6 /* Pods-swapiDemo */,
+				12C8494E9F1ECF7DEB7DD5AD56A065BE /* swapi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23CED6046C9EF5ED1CE5075A5C32377D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C333417A3E18B4803FE1A9511A636E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72AF60479A725CF8B53A8A4981D785D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA989644AD034DA7EE40A899DC76DAA5 /* Pods-swapiDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B9D824DB6F6778283CBF9A23DA568E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A56E7C9B217E7DC6A8B884067E1913 /* APIDefinitionProtocol.swift in Sources */,
+				D5731B06CB7741BE42AA9ACCA45CBE91 /* APIError.swift in Sources */,
+				8277FD67AEC11E0B90E9D1DC8EEBD3F7 /* APIRequester.swift in Sources */,
+				F00D5CDBBA3B12EA3301EBA88C7AA51E /* APIResult.swift in Sources */,
+				71162B8732D053D47597E78217CEFD1C /* swapi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B295BE8907B69DD12FEEB725ED95332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = swapi;
+			target = 12C8494E9F1ECF7DEB7DD5AD56A065BE /* swapi */;
+			targetProxy = 75FE9DB3896AFBF5F4080F47FC0B81CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24883C278F23F7801F1871A9F5623F8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		55B314744A26AF763CDE3B2769C0F608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66FF7FB74EDB445B0FCC395AB093D20 /* swapi.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/swapi/swapi-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swapi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/swapi/swapi.modulemap";
+				PRODUCT_MODULE_NAME = swapi;
+				PRODUCT_NAME = swapi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6303DDD8A493B86B5A02A38AAADACEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E37E5E36C304F94334E61C6DFD828B6 /* Pods-swapiDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swapiDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swapiDemo/Pods-swapiDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80B55B3E60352F91FB7015D914587F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A3C42B9866F509495D006BE22DE56A /* Pods-swapiDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swapiDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swapiDemo/Pods-swapiDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A19BB8868E6F6E7C4817EEC47B5213A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C2164A47F96F28D7C82D2840A43DF06B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66FF7FB74EDB445B0FCC395AB093D20 /* swapi.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/swapi/swapi-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swapi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/swapi/swapi.modulemap";
+				PRODUCT_MODULE_NAME = swapi;
+				PRODUCT_NAME = swapi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25E481E124242382B7CD5D3A15C23F6D /* Build configuration list for PBXNativeTarget "swapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B314744A26AF763CDE3B2769C0F608 /* Debug */,
+				C2164A47F96F28D7C82D2840A43DF06B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24883C278F23F7801F1871A9F5623F8C /* Debug */,
+				A19BB8868E6F6E7C4817EEC47B5213A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59846612BC5C9E7F0D9E3CA44EDAF537 /* Build configuration list for PBXNativeTarget "Pods-swapiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B55B3E60352F91FB7015D914587F11 /* Debug */,
+				6303DDD8A493B86B5A02A38AAADACEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
