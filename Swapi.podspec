@@ -79,8 +79,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :path => '.' }
-  #s.source       = { :git => "http://EXAMPLE/Swapi.git", :tag => "#{s.version}" }
+  s.source       = { :path => 'git' }
+  s.source       = { :git => "https://github.com/SalehAlbuga/swapi.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
