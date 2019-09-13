@@ -61,6 +61,12 @@ class MusicViewController: UITableViewController, UISearchBarDelegate {
     // MARK: - API Call
     
     func search(term: String) {
+        
+        APIRequester.requestRaw(endpoint: MusicAPI.search(term: "OneRepublic", limit: 25)) { (data, response, error) in
+            
+        }
+        
+        
         APIRequester.request(endpoint: MusicAPI.search(term: term, limit: 25), deserialize: ResultResponse.self) { (result) in
             DispatchQueue.main.async {
             
@@ -80,6 +86,8 @@ class MusicViewController: UITableViewController, UISearchBarDelegate {
                         }))
                         self.present(avc, animated: true, completion: nil)
                     
+                    break
+                case .badRequest:
                     break
                 case let .other(errDetails):
                     let avc = UIAlertController(title: "API Error", message: errDetails.localizedDescription, preferredStyle: .alert)

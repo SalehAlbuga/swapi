@@ -2,15 +2,15 @@ PODS:
   - swapi (0.9)
 
 DEPENDENCIES:
-  - swapi (from `../swapi`)
+  - swapi (from `../`)
 
 EXTERNAL SOURCES:
   swapi:
-    :path: "../swapi"
+    :path: "../"
 
 SPEC CHECKSUMS:
-  swapi: 7088e7f3041402e2cae12498f47a80e67e268ef6
+  swapi: 590dd412fe68ed6abaddca599fa1e065d4096770
 
-PODFILE CHECKSUM: d28920b25de4b0e8ac5154eee2c00e892dadc4d5
+PODFILE CHECKSUM: e73e360fd959e363d88b2b571006c5237c448024
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

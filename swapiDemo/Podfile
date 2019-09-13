@@ -5,7 +5,7 @@ target 'swapiDemo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'swapi', :path => '../swapi'
+  pod 'swapi', :path => '../'
   # Pods for swapiDemo
 
 end
