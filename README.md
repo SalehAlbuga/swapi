@@ -1,6 +1,7 @@
 # Swapi
 
 ### A simple network abstraction library that uses only URLSession. Supports Swift 4.0 JSON deserialization with Decodable protocol
+#### Swapi: SwiftAPI :]
 
 ## Installation
 ### Currently you can get Swapi with CocoaPods, add the following to your Podfile
