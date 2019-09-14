@@ -2,7 +2,7 @@
 
 ![](https://browniestorage.blob.core.windows.net/mycontainer/logo-sm.png)
 
-### A simple network abstraction library that uses only URLSession. Supports Swift 4.0 JSON deserialization with Decodable protocol. 
+### A simple network abstraction library that uses only URLSession. Supports Swift 4.0 JSON deserialization with Decodable protocol. Unopinionated & Simple.
 ##### Most apps have one thing in common, API calls. We sometimes get confused by requirements and ask "where do we start?".  You can define your APIs in iOS app in no time! No matter how big they are! No more "APIHelpers" or "APIManagers". Swapi covers your basic API needs with a small footprint!
 #### Swapi: SwiftAPI :]
 
@@ -14,7 +14,7 @@ pod 'swapi', '~> 0.9'
 
 ## Usage
 ## Defining APIs
- Defining APIs is easy and fun with Swapi and feels natural with Swift. Create an enum that conforms to **APIDefinitionProtocol** and implement the properties as need for your API. Here an example below:
+ Defining APIs is easy and fun with Swapi and feels natural with Swift. Create an enum that conforms to **APIDefinitionProtocol** and implement the properties as needed for your API. Here an example below:
 ```swift
 
 import swapi
