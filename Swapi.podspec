@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :path => 'git' }
-  s.source       = { :git => "https://github.com/SalehAlbuga/swapi.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/SalehAlbuga/swapi.git", :tag => "v#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
