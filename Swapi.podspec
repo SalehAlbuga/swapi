@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "swapi"
-  s.version      = "0.9"
+  s.version      = "0.9.1"
   s.summary      = "A network abstraction library that uses only Swift & URLSession"
 
   # This description is used to generate tags and improve search results.
