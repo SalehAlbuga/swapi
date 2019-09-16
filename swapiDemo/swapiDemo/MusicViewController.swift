@@ -62,12 +62,9 @@ class MusicViewController: UITableViewController, UISearchBarDelegate {
     
     func search(term: String) {
         
-        APIRequester.requestRaw(endpoint: MusicAPI.search(term: "OneRepublic", limit: 25)) { (data, response, error) in
-            
-        }
+        APIRequester.shared.debugLogging = true
         
-        
-        APIRequester.request(endpoint: MusicAPI.search(term: term, limit: 25), deserialize: ResultResponse.self) { (result) in
+        APIRequester.shared.request(endpoint: MusicAPI.search(term: term.replacingOccurrences(of: " ", with: "+"), limit: 25), deserialize: ResultResponse.self) { (result) in
             DispatchQueue.main.async {
             
             switch result {
