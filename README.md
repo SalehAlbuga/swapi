@@ -9,7 +9,7 @@
 ## Installation
  Currently you can get Swapi with CocoaPods, add the following to your Podfile
 ```podfile
-pod 'swapi', '~> 0.9.2'
+pod 'swapi', '~> 0.9.3'
 ```
 
 ## Usage
