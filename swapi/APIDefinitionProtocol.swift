@@ -16,7 +16,7 @@ public protocol APIDefinitionProtocol {
     var path: String { get }
     var url : String { get }
     var paramsType: ParamsType { get }
-    var queryString: [String : String]? { get }
+    var additionalQueryString: [String : String]? { get }
     var apiKeyRequired: Bool { get }
     var apiKey: String? { get }
     var apiKeyName: String? { get }
@@ -27,7 +27,7 @@ public protocol APIDefinitionProtocol {
 }
 
 public enum ParamsType {
-    case URLParams
+    case QueryString
     case JSONBody
 }
 

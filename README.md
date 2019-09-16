@@ -1,16 +1,20 @@
 # Swapi
 
-### A simple network abstraction library that uses only URLSession. Supports Swift 4.0 JSON deserialization with Decodable protocol
+![](https://browniestorage.blob.core.windows.net/mycontainer/logo-sm.png)
+
+### A simple network abstraction library that uses only URLSession. Supports Swift 4.0 JSON deserialization with Decodable protocol. Unopinionated & Simple.
+##### Most apps have one thing in common, API calls. We sometimes get confused by requirements and ask "where do we start?".  You can define your APIs in iOS app in no time! No matter how big they are! No more "APIHelpers" or "APIManagers". Swapi covers your basic API needs with a small footprint!
+#### Swapi: SwiftAPI :]
 
 ## Installation
-### Currently you can get Swapi with CocoaPods, add the following to your Podfile
+ Currently you can get Swapi with CocoaPods, add the following to your Podfile
 ```podfile
 pod 'swapi', '~> 0.9'
 ```
 
 ## Usage
 ## Defining APIs
-### Defining APIs is easy and fun with Swapi and feels natural with Swift. Create an enum that conforms to **APIDefinitionProtocol** and implement the properties as need for your API. Here an example below:
+ Defining APIs is easy and fun with Swapi and feels natural with Swift. Create an enum that conforms to **APIDefinitionProtocol** and implement the properties as needed for your API. Here an example below:
 ```swift
 
 import swapi
@@ -87,7 +91,7 @@ extension MusicAPI: APIDefinitionProtocol {
 
 ```
 ## Calling APIs
-### Call ```request(_,_,_)``` method of **APIRequester**  with the defined API as below. The library will return a result object with the deserialized response or the error.
+ Call ```request(_,_,_)``` method of **APIRequester**  with the defined API as below. The library will return a result object with the deserialized response or the error.
 
 ```swift
  APIRequester.request(endpoint: MusicAPI.search(term: term, limit: 25), deserialize: ResultResponse.self) { (result) in
@@ -115,7 +119,7 @@ extension MusicAPI: APIDefinitionProtocol {
         }
         }
 ```
-### If you want to use the class URLSession callback, you can call ```RequestRaw(_,_)```
+ If you want to use the classic **URLSession** callback, you can call ```RequestRaw(_,_)```
 
 ```swift
   APIRequester.requestRaw(endpoint: MusicAPI.search(term: "OneRepublic", limit: 25)) { (data, response, error) in
@@ -124,7 +128,7 @@ extension MusicAPI: APIDefinitionProtocol {
 ```
 
 ## Defining Models
-### You can define models using Swift 4 Decodable and pass it to Swapi to deserialize as shown in ```request(_,_,_)``` example
+ You can define models using Swift 4 Decodable and pass it to Swapi to deserialize as shown in ```request(_,_,_)``` example
 
 ```swift
 struct Result: Decodable {
@@ -161,7 +165,14 @@ struct Result: Decodable {
     
 }
 ```
-## Future work
-1. Better documentation
-2. More features :]
+## About
+I wrote this initially while working with ArabiaWeather Inc. and it's used in production. This is a basic open source version of it that I'm going to update and enhance soon.
 
+## Contribution
+For any feedback, bug reports or ideas feel free to file an Issue or even a Pull Request.
+
+## Pipeline
+* Documentation
+* Publish the tests
+* Better logging 
+* More features :]

@@ -14,6 +14,7 @@ enum MusicAPI {
 }
 
 extension MusicAPI: APIDefinitionProtocol {
+    
     var method: HttpMethod {
         switch self {
         case .search(_,_):
@@ -39,15 +40,12 @@ extension MusicAPI: APIDefinitionProtocol {
     var paramsType: ParamsType {
         switch self {
         case .search(_,_):
-            return .URLParams
+            return .QueryString
         }
     }
     
-    var queryString: [String : String]? {
-        switch self {
-        case let .search(term, limit):
-            return ["term": term, "limit": "\(limit)"]
-        }
+    var additionalQueryString: [String : String]? {
+       return nil
     }
     
     var apiKeyRequired: Bool {
@@ -67,7 +65,10 @@ extension MusicAPI: APIDefinitionProtocol {
     }
     
     var parameters: [String : String]? {
-       return nil
+        switch self {
+        case let .search(term, limit):
+            return ["term": term, "limit": "\(limit)"]
+        }
     }
     
     var headers: [String : String]? {
