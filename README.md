@@ -9,7 +9,7 @@
 ## Installation
  Currently you can get Swapi with CocoaPods, add the following to your Podfile
 ```podfile
-pod 'swapi', '~> 0.9.1'
+pod 'swapi', '~> 0.9.2'
 ```
 
 ## Usage
@@ -24,6 +24,7 @@ enum MusicAPI {
 }
 
 extension MusicAPI: APIDefinitionProtocol {
+    
     var method: HttpMethod {
         switch self {
         case .search(_,_):
@@ -49,15 +50,12 @@ extension MusicAPI: APIDefinitionProtocol {
     var paramsType: ParamsType {
         switch self {
         case .search(_,_):
-            return .URLParams
+            return .QueryString
         }
     }
     
-    var queryString: [String : String]? {
-        switch self {
-        case let .search(term, limit):
-            return ["term": term, "limit": "\(limit)"]
-        }
+    var additionalQueryString: [String : String]? {
+       return nil
     }
     
     var apiKeyRequired: Bool {
@@ -77,7 +75,10 @@ extension MusicAPI: APIDefinitionProtocol {
     }
     
     var parameters: [String : String]? {
-       return nil
+        switch self {
+        case let .search(term, limit):
+            return ["term": term, "limit": "\(limit)"]
+        }
     }
     
     var headers: [String : String]? {
@@ -86,7 +87,8 @@ extension MusicAPI: APIDefinitionProtocol {
     
     var sharedHeaders: [String : String]? {
         return nil
-    }    
+    }
+    
 }
 
 ```
@@ -94,7 +96,7 @@ extension MusicAPI: APIDefinitionProtocol {
  Call ```request(_,_,_)``` method of **APIRequester**  with the defined API as below. The library will return a result object with the deserialized response or the error.
 
 ```swift
- APIRequester.request(endpoint: MusicAPI.search(term: term, limit: 25), deserialize: ResultResponse.self) { (result) in
+ APIRequester.shared.request(endpoint: MusicAPI.search(term: term, limit: 25), deserialize: ResultResponse.self) { (result) in
             DispatchQueue.main.async {
             switch result {
             case let .success(response):
@@ -122,8 +124,15 @@ extension MusicAPI: APIDefinitionProtocol {
  If you want to use the classic **URLSession** callback, you can call ```RequestRaw(_,_)```
 
 ```swift
-  APIRequester.requestRaw(endpoint: MusicAPI.search(term: "OneRepublic", limit: 25)) { (data, response, error) in
+  APIRequester.shared.requestRaw(endpoint: MusicAPI.search(term: "OneRepublic", limit: 25)) { (data, response, error) in
          ...   
+        }
+```
+
+You can pass your URLSession
+```swift
+    APIRequester.shared.request(endpoint: MusicAPI.search(term: "Coldplay", limit: 25), deserialize: ResultResponse.self, session: yourURLSession) { (result) in
+                ...
         }
 ```
 
@@ -165,6 +174,13 @@ struct Result: Decodable {
     
 }
 ```
+
+## Logging
+You can turn on logging for debugging 
+```swift
+    APIRequester.shared.debugLogging = true
+```
+
 ## About
 I wrote this initially while working with ArabiaWeather Inc. and it's used in production. This is a basic open source version of it that I'm going to update and enhance soon.
 
@@ -172,7 +188,7 @@ I wrote this initially while working with ArabiaWeather Inc. and it's used in pr
 For any feedback, bug reports or ideas feel free to file an Issue or even a Pull Request.
 
 ## Pipeline
-* Documentation
+* Better Documentation
 * Publish the tests
 * Better logging 
 * More features :]
